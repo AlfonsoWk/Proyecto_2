@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "gift": "Undertale",
+      "tipo": "1",
+      "tiempo": "Indie",
+      "precio": 10,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_714537-MLA53061400161_122022-V.jpg"
+    },
+    {
+      "id": 2,
+      "gift": "Fortnite",
+      "tipo": "2",
+      "tiempo": "Battle Royale",
+      "precio": 0,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_991054-MLA44207335557_112020-O.jpg"
+    },
+    {
+      "id": 3,
+      "gift": "Cuphead",
+      "tipo": "3",
+      "tiempo": "Indie",
+      "precio": 50,
+      "imagen": "https://i0.wp.com/fhalcongaming.com/wp-content/uploads/2021/07/GIFTC0109_1.png?fit=1080%2C1080&ssl=1"
+    },
+    {
+      "id": 4,
+      "gift": "Call Of Duty Black Ops III",
+      "tipo": "4",
+      "tiempo": "Acción",
+      "precio": 200,
+      "imagen": "https://i0.wp.com/fhalcongaming.com/wp-content/uploads/2021/07/GIFTC0109_1.png?fit=1080%2C1080&ssl=1"
+    }
+  ]
+  
