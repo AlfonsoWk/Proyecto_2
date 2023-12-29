@@ -12,10 +12,10 @@
 
 /* Navbar */
 
-#button {
+/* #button {
   background-color: #0f0f0f;
   color: white;
-}
+} */
 
 .navbar {
   background: #000000;
@@ -599,6 +599,7 @@ button {
 
 #usuario,
 #contraseña,
+#confirmar-contraseña,
 #opciones,
 #nacimiento,
 #comentario,

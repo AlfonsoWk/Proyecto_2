@@ -30,7 +30,8 @@
                 <a class="btn-nav" href="../pages/formulario.html"><button class="btnfooter">Contacto</button></a>
               </li>
               <li class="nav-item me-2">
-                <a class="btn-nav" href="../pages/nosotros.html" target="_parent"><button class="btnfooter">Nosotros</button></a>
+                <a class="btn-nav" href="../pages/nosotros.html" target="_parent"><button
+                    class="btnfooter">Nosotros</button></a>
               </li>
               <li class="nav-item dropdown me-2">
                 <a class="btn-nav dropdown-toggle" data-bs-toggle="dropdown"><button
@@ -48,7 +49,8 @@
             <form class="d-flex ms-auto" role="search">
               <input class="form-control me-2 rounded-pill text-center" type="search" placeholder="Buscar en la tienda"
                 aria-label="Search" />
-              <button class="btn btn-info rounded-pill" type="submit"><a class="linknav" href="./Error404.html">Buscar</a></button>
+              <button class="btn btn-info rounded-pill" type="submit"><a class="linknav"
+                  href="./Error404.html">Buscar</a></button>
             </form>
             </form>
           </div>
@@ -58,10 +60,12 @@
   <main class="fondo">
     <h1 class="titulo-registro text-info">Registro</h1>
     <div class="contenedor-registro">
-      <form action="" class="formulario-registro bg-info-subtle">
+      <form action="" class="formulario-registro bg-info-subtle" onsubmit="return validarFormulario()" method="post"
+        id="form">
         <label for="nombre" class="nom">
-          <p class="text-registrate">Apellido y nombre</p>
-          <input type="text" name="nombre" id="nombre" placeholder="ingrese Apellido y nombre" />
+          <p class="text-registrate">Nombre y Apellido</p>
+          <input type="text" name="nombre" id="nombre" placeholder="ingrese Apellido y nombre" pattern="[a-zA-Z]+"
+            title="Solo se permiten letras." />
         </label>
         <label for="usuario" class="usu">
           <p class="text-registrate">Usuario</p>
@@ -74,7 +78,8 @@
           </label>
           <label for="contraseña" class="contra">
             <p class="text-registrate">Contraseña de nuevo</p>
-            <input type="password" name="contraseña" id="contraseña" placeholder="repita contraseña" required />
+            <input type="password" name="confirmar-contraseña" id="confirmar-contraseña" placeholder="repita contraseña"
+              required />
           </label>
         </div>
         <label for="email" class="ema">
@@ -103,11 +108,13 @@
         <div class="linea1">
           <label for="telefono" class="tel">
             <p class="text-registrate">Teléfono</p>
-            <input type="number" id="telefono" name="telefono" placeholder="ingrese numero" required />
+            <input type="number" id="telefono" name="telefono" placeholder="ingrese numero" pattern="\d+"
+              title="Solo se permiten números." required />
           </label>
           <label for="codigo" class="cod">
             <p class="text-registrate">Código Postal</p>
-            <input type="number" name="codigo" id="codigo" placeholder="ingrese codigo" required />
+            <input type="number" name="codigo" id="codigo" placeholder="ingrese codigo" pattern="\d+"
+              title="Solo se permiten números." required />
           </label>
         </div>
         <label for="oferta" class="ofe">
@@ -119,7 +126,9 @@
           <input type="checkbox" id="terminos" value="terminos" required />
           <p class="text-registrate">Acepta los terminos y condiciones</p>
         </label>
-        <input type="button" class="Enviar btn btn-info rounded-5" value="Enviar" />
+        <!-- <input type="button" class="Enviar btn btn-info rounded-5" value="Enviar" onclick="validarRegistro()" /> -->
+        <button type="button" id="button" value="Enviar" class="Enviar btn btn-info rounded-5"
+          onclick="enviarFormulario()">Enviar</button>
       </form>
     </div>
     <footer class="pie-pagina bg-info-subtle">
@@ -132,7 +141,7 @@
           </figure>
         </div>
         <div class="box">
-          <h2 class="h2dos text-info">ENLASES</h2>
+          <h2 class="h2dos text-info">ENLACES</h2>
           <div class="footer-buttons">
             <a class="btn-nav" href="../pages/formulario.html"><button class="btnfooter">Contacto</button></a>
             <a class="btn-nav" href="../pages/nosotros.html" target="_parent"><button
@@ -172,9 +181,21 @@
         <small class="text-light">&copy;2023 <b>GAMER-LAND</b>- Todos Los Derechos Reservados.</small>
       </div>
     </footer>
+    <script>
+      function enviarFormulario() {
+          if (validarRegistro()) {
+              // Realizar acciones adicionales si es necesario antes de redirigir
+              // ...
+      
+              // Redirigir a la página de error404
+              window.location.href = './Error404.html';
+          }
+      }
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"></script>
+    <script src='../js/validaregistro.js'></script>
 </body>
 
 </html>
