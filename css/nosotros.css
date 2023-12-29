@@ -48,6 +48,7 @@ body {
   padding: 20px;
   overflow: auto;
 }
+
 .categories .card {
   float: left;
   margin-right: 20px;
@@ -70,8 +71,10 @@ body {
 .imagen-section img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px; /* Ajusta según sea necesario */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+  border-radius: 8px;
+  /* Ajusta según sea necesario */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Sombra opcional */
 }
 
 .imagen-section p {
@@ -90,7 +93,8 @@ body {
 }
 
 .card {
-  flex: 0 0 50%; /* Ajusta el tamaño de la tarjeta según sea necesario */
+  flex: 0 0 50%;
+  /* Ajusta el tamaño de la tarjeta según sea necesario */
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
@@ -423,12 +427,25 @@ button {
   width: 30px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .pie-pagina .grupo-1 {
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
     padding: 35px 0px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer button {
+    margin: 8px 0;
+    /* Ajusta el valor según tu preferencia */
+  }
+
+  .linkfoot {
+    margin: 8px 0;
   }
 
   .box {
@@ -437,11 +454,13 @@ button {
     justify-content: center;
   }
 }
+
 /* Mi cuenta y Registro */
 
 .fondo-micuenta {
   background-color: var(--fondo);
 }
+
 .imgfondo-micuenta {
   display: none;
   position: absolute;
@@ -449,6 +468,7 @@ button {
   width: 100vw;
   height: 100vw;
 }
+
 .imgfondo-registro {
   display: flex;
   position: absolute;
@@ -456,32 +476,39 @@ button {
   width: 100vw;
   height: 100vw;
 }
+
 .linknav:link,
 .linknav:visited {
   text-decoration: none;
   color: #0f0f0f;
 }
+
 .nav-link:link {
   text-decoration: none;
   color: #64ccc5;
   border-radius: 50px 50px 50px 50px;
   padding: 10px;
 }
+
 .nav-link:visited {
   color: #64ccc5;
 }
+
 .nav-link:hover {
   background-color: #64ccc5;
 }
+
 .dropdown-toggle {
   position: relative;
 }
+
 .dropdown-toggle::after {
   position: absolute;
   top: 11px;
   right: 8px;
   color: black;
 }
+
 :root {
   --fondo: ghostwhite;
 }
@@ -494,6 +521,7 @@ button {
   align-items: center;
   justify-content: center;
 }
+
 .contenedor {
   padding: 0px 60px 60px 60px;
   display: flex;
@@ -503,6 +531,7 @@ button {
   justify-content: center;
   background-color: var(--fondo);
 }
+
 .titulo-registro {
   padding: 100px 20px 30px 20px;
   text-align: center;
@@ -511,6 +540,7 @@ button {
   position: relative;
   z-index: 1;
 }
+
 .titulo {
   padding: 100px 20px 30px 20px;
   text-align: center;
@@ -519,6 +549,7 @@ button {
   position: relative;
   z-index: 1;
 }
+
 .imgviaje {
   width: 28rem;
   height: 30rem;
@@ -542,11 +573,13 @@ button {
   z-index: 1;
   transition: all 1s ease-in-out;
 }
+
 .formulario-registro:hover,
 .formulario-registro:active {
   background-color: #dee0ae;
   transition: all 0.5s ease-in-out;
 }
+
 .formulario {
   display: flex;
   flex-direction: column;
@@ -568,10 +601,12 @@ button {
   color: black;
   display: contents;
 }
+
 .logo {
   width: 17rem;
   margin-bottom: 4rem;
 }
+
 .usu,
 .contra,
 .opc,
@@ -586,9 +621,11 @@ button {
   align-items: center;
   width: 100%;
 }
+
 .pre {
   width: 100%;
 }
+
 .linea1 {
   display: flex;
   flex-direction: row;
@@ -612,12 +649,14 @@ button {
   border-radius: 20px;
   text-align: center;
 }
+
 .preguntas {
   color: #c6c6c6;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
+
 .terminos,
 .ofe {
   width: 100%;
@@ -626,14 +665,17 @@ button {
 .Enviar {
   width: 100%;
 }
+
 .titulo2 {
   color: #232d3f;
 }
+
 .redes {
   display: flex;
   flex-direction: row;
   gap: 30px;
 }
+
 .gmail,
 .faceboock {
   width: 11rem;
@@ -646,9 +688,11 @@ button {
 :link {
   color: black;
 }
+
 .facebook:visited {
   color: black;
 }
+
 .facebook:hover {
   color: white;
   background-color: #64ccc5;
@@ -670,14 +714,17 @@ button {
 
   padding: 5px;
 }
+
 .olvidaste:hover {
   color: white;
   background-color: #64ccc5;
 }
+
 @media screen and (max-width: 992px) {
   .imgviaje {
     display: none;
   }
+
   .imgfondo-micuenta {
     display: flex;
   }
@@ -687,14 +734,17 @@ button {
     margin-top: 0px;
     border-radius: 20px;
   }
+
   main,
   .contenedor,
   .formulario {
     background-color: transparent;
   }
+
   label {
     border-radius: 14px;
   }
+
   .titulo2 {
     border-radius: 20px;
     padding: 5px;
@@ -703,9 +753,11 @@ button {
   .olvidaste:link {
     color: #64ccc5;
   }
+
   .olvidaste:visited {
     color: white;
   }
+
   .olvidaste:hover {
     color: white;
     background-color: #64ccc5;
@@ -716,6 +768,7 @@ button {
     color: white;
     background-color: #64ccc5;
   }
+
   .linea1 {
     display: flex;
     flex-direction: column;
@@ -723,14 +776,17 @@ button {
     justify-content: space-between;
     gap: 15px;
   }
+
   .imgfondo-registro {
     display: none;
   }
+
   .formulario-registro {
     border: none;
     background-color: transparent;
     width: 100%;
   }
+
   .formulario-registro:hover {
     background-color: transparent;
   }
@@ -740,15 +796,19 @@ button {
   .imgfondo-micuenta {
     display: none;
   }
+
   .titulo2 {
     background-color: transparent;
   }
+
   .olvidaste:link {
     color: #64ccc5;
   }
+
   .olvidaste:visited {
     color: #14a44d;
   }
+
   .olvidaste:hover {
     color: white;
     background-color: #14a44d;
