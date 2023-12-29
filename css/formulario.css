@@ -423,12 +423,25 @@ button {
   width: 30px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .pie-pagina .grupo-1 {
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
     padding: 35px 0px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer button {
+    margin: 8px 0;
+    /* Ajusta el valor según tu preferencia */
+  }
+
+  .linkfoot {
+    margin: 8px 0;
   }
 
   .box {
