@@ -432,7 +432,9 @@ button {
     padding: 35px 0px;
   }
 
-  footer, #nosotros {
+  footer,
+  #nosotros,
+  .redes {
     text-align: center;
   }
 

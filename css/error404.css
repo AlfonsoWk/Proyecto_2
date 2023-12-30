@@ -1,55 +1,62 @@
 * {
-    border: 0;
-    padding: 0;
-    margin: 0;
-
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 .uno img {
-    width: 170px;
-    height: 59px;
+  width: 170px;
+  height: 59px;
 }
 .dos img {
-    width: 200px;
-    height: 250px;
+  width: 200px;
+  height: 250px;
 }
 div {
-    display: flex;
-    flex-direction: row;
-    
+  display: flex;
+  flex-direction: row;
 
-    padding: 80px;
+  padding: 80px;
 }
 .todo {
-    justify-content: center;
-    
-    
+  justify-content: center;
 }
 h2 {
-    font-size: 30px;
-    margin-top: 10px;
+  font-size: 30px;
+  margin-top: 10px;
 }
 .gris {
-    color: grey;
-    font-weight: 200;
-    margin-bottom: 10px;
+  color: grey;
+  font-weight: 200;
+  margin-bottom: 10px;
 }
-
 
 p {
-    font-size: 20px;
+  font-size: 20px;
 }
 .gris2 {
-    color: gray;
-    
+  color: gray;
 }
 
-.boton-volver { 
-    margin: 0px 0 0 300px;
-    background-color: #0dcaf0;
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100px;
-    height: 50px;
+.boton-volver {
+  margin: 0px 0 0 300px;
+  background-color: #0dcaf0;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+
+  .boton-volver {
+    margin: 10px auto; /* Ajusta el margen para centrar verticalmente */
+    display: block; /* Asegura que el botón ocupe todo el ancho disponible */
+  }
+}
