@@ -119,8 +119,7 @@ ul li {
   color: black;
 }
 
-
-.text-content{
+.text-content {
   margin-top: -150px;
   margin-bottom: 10px;
 }
@@ -533,7 +532,8 @@ button,
   width: 30px;
 }
 
-@media screen and (max-width: 700px) {
+/* Desde acá se modifico */
+@media screen and (max-width: 600px) {
   .pie-pagina .grupo-1 {
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
@@ -541,12 +541,21 @@ button,
     padding: 35px 0px;
   }
 
-  .box {
-    margin: 20px;
-    display: block;
-    justify-content: center;
+  footer,
+  #nosotros {
+    text-align: center;
+  }
+
+  footer button {
+    margin: 8px 0;
+    /* Ajusta el valor según tu preferencia */
+  }
+
+  .linkfoot {
+    margin: 8px 0;
   }
 }
+/* Hasta aca se modifico */
 /* Mi cuenta y Registro */
 
 .fondo-micuenta {
@@ -873,4 +882,12 @@ button,
 
 P {
   color: white;
+}
+
+/* modifcado */
+
+@media screen and (max-width: 700px) {
+  video {
+    max-width: 375px;
+  }
 }

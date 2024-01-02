@@ -779,3 +779,32 @@ button {
     background-color: #14a44d;
   }
 }
+
+/* Desde acá se modifico */
+@media screen and (max-width: 600px) {
+  .card-text-destacado {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%; 
+  }
+
+  .verMas {
+    display: block;
+  }
+}
+
+.card-text-destacado {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%; /* Ajusta según sea necesario */
+  cursor: pointer;
+}
+
+.show-full-text {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+/* Hasta acá se modifico */
